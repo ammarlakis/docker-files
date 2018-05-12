@@ -18,5 +18,5 @@ RUN         apk add --update -t build-deps curl go git libc-dev gcc libgcc && \
 VOLUME      /webhooks/
 EXPOSE      9000
 
-ENTRYPOINT  ["/usr/local/bin/webhook", ]
+ENTRYPOINT  ["/usr/local/bin/webhook"]
 CMD         ["-hooks", "/webhooks/hooks.json"]
